@@ -8,6 +8,9 @@ php:
   - 7.0
   - 7.1
 
+install:
+  - composer install --no-interaction
+
 script:
   # Run your tests here.
   - echo 'Tested'
