@@ -8,8 +8,15 @@ php:
   - 7.0
   - 7.1
 
-install:
-  - composer install --no-interaction
+
+
+deploy:
+  skip_cleanup: true
+  file_glob: true
+  file:
+    - travis_release/oyst.tar.gz
+    - travis_release/oyst.zip
+
 
 script:
   # Run your tests here.
